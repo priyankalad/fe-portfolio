@@ -1,3 +1,8 @@
+$red-color:  rgb(242, 66, 66);
+$white-color: rgb(255, 250, 250);
+$black-color: rgb(37, 37, 37);
+$navbar-color: black;
+
 *,
 *::after,
 *::before {
@@ -33,13 +38,84 @@ body {
 
   &__desc {
     padding: 0;
+    font-weight: 300;
+    font-size: 3rem;
+    
+
+
+    &--name {
+      color: $red-color;
+    }
   }
+
   &__btn {
     margin-top: 1rem;
     padding: 1rem;
     background-color: transparent;
-    color: white;
-    border: 2px solid white;
+    color: $white-color;
+    border: 2px solid $white-color;
     font-size: 1.5rem;
+  }
+}
+
+.nav_bar {
+  display: flex;
+  background-color: $navbar-color;
+  height: 3rem;
+  align-items: center;
+  font-size: large;
+  justify-content: center;
+
+
+  &__ul {
+
+    display: flex;
+
+
+
+
+  }
+
+  &__li {
+    display: flex;
+
+
+
+
+
+
+  }
+
+  &__a {
+    text-decoration: none;
+    color: $white-color;
+    padding-right: 4rem;
+
+    &:hover {
+      color: $red-color;
+    }
+
+
+  }
+
+
+}
+
+.about_sec {
+  height: 100vh;
+
+
+
+  &--hd {
+    color: $black-color;
+    font-size: 4rem;
+    margin-top: 2rem;
+
+  }
+  &--div{
+    
+   
+    border-bottom: 3px solid $black-color;
+   
   }
 }
