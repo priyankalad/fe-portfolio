@@ -4,8 +4,8 @@ import Navbar from './Navbar';
 const About = () => {
     return (
         <>
-        <Navbar />
-        <section className="about_sec">
+        
+        <section className="about_sec" id="abt_sec">
             <div className="about_sec--div">
             <h1 className="about_sec--hd">ABOUT</h1>
 
